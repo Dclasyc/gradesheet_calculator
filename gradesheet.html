@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+
+		<title>GRADE SHEET</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1", shrink-to-fit="no">
+
+		<meta name="description" content="Create a Javascript Gradesheet is 10mins">
+		<meta name="keywords" content="Gradesheet; ">
+		<meta name="author" content="Oladipo">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+		<link rel="stylesheet" type="text/css" href="gradesheet.css">
+
+
+
+		<script type="text/javascript" src="gradesheet.js"></script>
+
+
+	</head>
+	<body>
+
+
+
+		<div class="container">
+			
+			<div class="row" id="parentrow" style="border-radius: 1%;">
+
+				<diV id="header" ><h1>DCLASYC UNIVERSITY GRADING SHEET CALCULATOR</h1></diV>
+
+				<div class="row">
+					<div class="col-md-4 mt-5"><h3>Subject</h3></div>
+					<div class="col-md-4 mt-5"><h3>Score</h3></div>
+					<div class="col-md-4 mt-5"><h3>Grade</h3></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 mt-4">English</div>
+					<div class="col-md-4 mt-4">
+						<input type="text" name="english" id="engscore" oninput="getgrade(this.value,'enggrade')">
+					</div>
+					<div class="col-md-4 mt-4">
+						<input type="text" name="englishscore" id="enggrade">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Mathematics</div>
+					<div class="col-md-4 mt-3" >
+						<input type="text" name="maths" id="mathscore" value="" oninput="getgrade(this.value,'mathgrade')">
+					</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="mtsscore" id="mathgrade">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Chemistry</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="Chem" value="" id="chemscore" oninput="getgrade(this.value,'chemgrade')">
+					</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="chmscore" id="chemgrade">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Biology</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="Biology" value="" id="bioscore" oninput="getgrade(this.value,'biograde')">
+					</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="biologyscore" id="biograde">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 mt-3">French</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="French" value="" id="frenchscore" oninput="getgrade(this.value,'frenchgrade')">
+					</div>
+					<div class="col-md-4 mt-3">
+						<input type="text" name="fchscore" id="frenchgrade">
+					</div>
+				</div>
+
+
+
+				<div class="row">
+
+					<div class="col-md-4 mt-5">
+						<button type="button" class="btn btn-success" onclick="calgrade()">Get Result</button>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Total</div>
+					<div class="col-md-4" id="total" style="min-height: 25px; display: flex; align-items: center;"></div>
+					<div class="col-md-4"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Average</div>
+					<div class="col-md-2" id="avg" style="min-height: 25px; display: flex; align-items: center;"></div>
+					<div class="col-md-4 offset-2" style="min-height: 25px" style="display: flex;"> <img src="" id="emoji"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 mt-3">Remarks</div>
+					<div class="col-md-4" id="remark" style="min-height: 25px; display: flex; align-items: center;"></div>
+					<div class="col-md-4"></div>
+				</div>
+
+				
+					
+				</div>
+
+		</div>
+
+		
+	
+	</body>
+	</html>
